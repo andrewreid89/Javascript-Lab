@@ -1,0 +1,46 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#StartBtn{
+    background-color: lawngreen;
+    width: 350px;
+    height: 50px;
+    border: 2px solid blue;
+    margin: 100px auto 0;   
+    display:block;
+    
+}
+
+
+/* Want to have a point that hides everything until the "Start Game" button is pressed */
+
+
+#StartGame{
+    margin-top: 100px;
+    border:1px solid black;
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#AttackBtn, #HealBtn, #QuitBtn{
+    height: 260px;
+    padding: 10px 40px;    
+}
+
+
+.6boxes{
+    border:3px solid black;
+}
+
+
+    
