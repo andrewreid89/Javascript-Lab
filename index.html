@@ -2,34 +2,55 @@
 <html>
     <head>
         <title>Gameasdfasdf</title>
-        <link href="styleLab3.css" type="text/css" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Krona+One" rel="stylesheet">
         
     </head>
     <body>
         <div class="container">
-            <button id="StartBtn" type="button" value="startGame" onclick="(this.value)">FIGHT A CHICKEN!</button>
-        
+            
+            <div id="StartBtnCtn">
+                <button id="StartBtn" onclick="startGame()">FIGHT A CHICKEN!</button>
+            </div>
+            
             <div id="StartGame">
             
-                <div class="buttons">
-                    <button id="AttackBtn" type="button" value="attack" onclick="startCombat(this.value)">Attack</button>
-                    <button id="HealBtn" type="button" value="heal" onclick="startCombat(this.value)">Heal</button>
-                    <button id="QuitBtn" type="button" value="quit" onclick="startCombat(this.value)">Quit</button>
+                <div class="buttonsDiv">
+                    
+                    <button id="attackBtn" class="button" type="button" value="attack" onclick="startCombat(this.value)">ATTACK!</button>
+                
+                    <button id="healBtn" class="button" type="button" value="heal" onclick="startCombat(this.value)"><em>Heal</em></button>
+                    
+                    <button id="quitBtn" class="button" type="button" value="quit" onclick="startCombat(this.value)"><strong>Quit</strong></button>
+                
                 </div>
-            
-                <div class="6boxes">
-                    <div class="name"></div>
-                    <div class="healsR"></div>
-                    <div class="health"></div>
-                    <div class="wins"></div>
-                    <div class="eName"></div>    
-                    <div class="eHealth"></div>
+                
+                <div class="stats1"></div>
+                <div class="stats2"></div>
+                
+                <div class="gameInfo">
+                    
+                    <h3>Player Stats</h3>
+                    <div id="PlayerStats">
+                        <div class="name"></div>
+                        <div class="healsR"></div>
+                        <div class="health"></div>
+                        <div class="wins"></div>
+                    </div>
+                    
+                    <h3>Enemy Stats</h3>
+                    <div id="EnemyStats">
+                        <div class="eName"></div>    
+                        <div class="eHealth"></div>
+                    </div>
                 </div>
     
-                <div class="stats"></div>
+                
             </div>
         </div>
         
-        <script src="scriptLab3.js" type="text/javascript"></script>
+        <h1 id="quitScreen">You have quit the game and ran from a chicken...</h1>
+        
+        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>

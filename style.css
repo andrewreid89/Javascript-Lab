@@ -1,21 +1,27 @@
+/*This starts everything to hide, and then the button click changes the display to show*/
+#StartGame, #quitScreen{
+    display:none;
+}
+
+
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
+#StartBtnCtn{
+    display:flex;
+    justify-content: center;
+}
 
 #StartBtn{
     background-color: lawngreen;
     width: 350px;
     height: 50px;
     border: 2px solid blue;
-    margin: 100px auto 0;   
-    display:block;
-    
+    margin: 100px auto;  
+    font-size: 35px;
 }
-
-
-/* Want to have a point that hides everything until the "Start Game" button is pressed */
 
 
 #StartGame{
@@ -24,23 +30,60 @@
 }
 
 
-
-.buttons{
+.buttonsDiv{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.button{
+    font-family: 'Krona One', sans-serif;
+    font-size:30px;
+    height: 160px;
+    width:20%;
+    margin: 20px auto;
+}
+
+#attackBtn{
+    background-color:red;
+}
+#healBtn{
+    background-color:lawngreen;
+}
+#quitBtn{
+    background-color:mediumpurple;
+}
+
+
+.stats1, .stats2{
+    font-family: 'Bungee', cursive;
+    font-size:20px;
+    text-align:center;
+    margin:20px auto;
+}
+
+.gameInfo{
+    border:3px solid red;
+    display:flex;
+    flex-direction: column;
+/*    align-items:center;*/
+}
+
+#PlayerStats, #EnemyStats{
+    display: flex;
+    flex-direction:column-reverse;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size:20px
+}
+
+h3{
+    align-self:center;
+    font-size:35px;
+}
     
+.name, .eName{
+    font-size:30px;
+    font-weight: 700;
+    color:Blue;
 }
-
-
-#AttackBtn, #HealBtn, #QuitBtn{
-    height: 260px;
-    padding: 10px 40px;    
-}
-
-
-.6boxes{
-    border:3px solid black;
-}
-
-
-    
