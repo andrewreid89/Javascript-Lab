@@ -1,7 +1,3 @@
-console.log("Testing");
-
-
-/*
 var character = {
     name: "Player",
     health: 40,
@@ -24,6 +20,13 @@ var enemy = {
     }
 };
 
+//
+//function startGame(){
+//    
+//}
+//
+
+
 
 function startCombat(choice) {
     
@@ -34,6 +37,9 @@ function startCombat(choice) {
         return;
     }
 
+//How to get button push to link to "attack" choice; "heal" and "quit"
+    
+    
     if (choice === "attack") {
         enemy.health -= character.generateAttackDamage();
         character.health -= enemy.generateAttackDamage();
@@ -86,11 +92,9 @@ function displayInfo (){
     var eName = document.getElementsByClassName("eName")[0];
     var eHealth = document.getElementsByClassName("eHealth")[0];
     name.innerText = character.name;
-    healsR.innerText = character.healsRemaining;
+    healsR.innerText = character.healsR;
     health.innerText = character.health;
     wins.innerText = character.wins;
     eName.innerText = enemy.name;
     eHealth.innerText = enemy.health;
 }
-
-*/
